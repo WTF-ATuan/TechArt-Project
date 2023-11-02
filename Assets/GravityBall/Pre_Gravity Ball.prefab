@@ -148,6 +148,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boundsMax: 2
+  bounceClip: {fileID: 8300000, guid: eb404e863d0d0fe4a943e673d43d04d7, type: 3}
+  disperseClip: {fileID: 8300000, guid: 41511963495b4e549934bad6a33f602b, type: 3}
 --- !u!1 &9137094861544195117
 GameObject:
   m_ObjectHideFlags: 0
