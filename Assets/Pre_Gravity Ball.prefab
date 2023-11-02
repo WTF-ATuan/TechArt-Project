@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1399065629142308199}
   - component: {fileID: 8243985650212180999}
   - component: {fileID: 8375727080165465287}
+  - component: {fileID: 3715044640237462001}
   m_Layer: 0
   m_Name: Pre_Gravity Ball
   m_TagString: Untagged
@@ -134,6 +135,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3715044640237462001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6326890517837178114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e93be1422ba465fa879fcafdd51ef00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9137094861544195117
 GameObject:
   m_ObjectHideFlags: 0
