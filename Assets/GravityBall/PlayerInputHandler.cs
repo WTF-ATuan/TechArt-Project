@@ -3,6 +3,8 @@ using UnityEngine;
 public class PlayerInputHandler : MonoBehaviour{
 	[SerializeField] private LayerMask detectLayer;
 	[SerializeField] private GameObject preBall;
+	[SerializeField] private float throwForce = 5;
+	
 	
 	private Camera _camera;
 	
@@ -29,6 +31,8 @@ public class PlayerInputHandler : MonoBehaviour{
 
 	private void PlaceGravityBall(Vector3 placePoint){
 		placePoint.y = Random.Range(3f, 5f);
-		Instantiate(preBall, placePoint, Quaternion.identity);
+		var cameraPosition = _camera.transform.position;
+		var ballRigid = Instantiate(preBall, cameraPosition, Quaternion.identity).GetComponent<Rigidbody>();
+		ballRigid.AddForce((placePoint - cameraPosition) + _camera.transform.forward * throwForce , ForceMode.Impulse);
 	}
 }
